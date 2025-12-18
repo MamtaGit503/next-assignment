@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* 👇 IMPORTANT PART */
+@layer utilities {
+  @keyframes spin360 {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin360 17s linear infinite;
+  }
+}
