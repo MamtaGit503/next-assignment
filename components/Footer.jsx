@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="absolute inset-0 "></div>
 
       <div className="relative py-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 text-sm">
           {/* Left */}
           <div className="flex items-center gap-2 cursor-pointer hover:text-white transition md:mt-20 text-[16px] md:text-[18px]">
             <span className="text-lg">💬</span>
