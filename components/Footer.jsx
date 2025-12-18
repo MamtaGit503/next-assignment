@@ -12,7 +12,7 @@ export default function Footer() {
           </div>
 
           {/* Center Menu */}
-          <ul className="flex flex-wrap justify-center gp-4 md:gap-8 tracking-wide text-[14px] md:text-[18px]">
+          <ul className="flex flex-wrap justify-center gap-3 md:gap-8 tracking-wide text-[14px] md:text-[18px]">
             <li className="text-white cursor-pointer hover:text-gray-400">
               Home
             </li>
