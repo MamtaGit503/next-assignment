@@ -8,7 +8,7 @@ export default function Hero() {
     <section
       id="home"
       className="
-        relative min-h-screen md:min-h-[124vh]
+        relative min-h-auto md:min-h-[124vh]
         flex flex-col justify-end
         bg-[url('/images/space.jpg')] bg-cover bg-center
         overflow-hidden
@@ -59,7 +59,7 @@ export default function Hero() {
       <div
         className="
           relative z-10
-          flex items-center justify-center md:justify-end gap-16
+          flex items-center justify-end gap-16
           mt-10
         "
       >
