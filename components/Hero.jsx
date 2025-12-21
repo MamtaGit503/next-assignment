@@ -22,7 +22,7 @@ export default function Hero() {
         <h1
           className="
             text-3xl lg:text-5xl xl:text-[80px]
-            font-extrabold leading-tight uppercase
+            font-extrabold leading-tight uppercase mt-6 lg:mt-0
           "
         >
           Let’s Travel to the Edge <br className="hidden sm:block" /> of Space
