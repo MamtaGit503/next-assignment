@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -21,43 +22,27 @@ export default function Navbar() {
     <>
       <header
         className={`fixed top-0 left-0 w-full z-30 transition-all duration-300
-        ${scrolled ? "bg-black/40 backdrop-blur" : "bg-transparent"}`}
+        ${scrolled ? "bg-black/40 backdrop-blur" : "bg-[url('/images/space.jpg')] bg-cover bg-top overflow-hidden"}`}
       >
         <nav className="flex items-center justify-between px-6 md:px-16 py-6">
-          <a href="#home" className="hover:text-gray-300 cursor-pointer">
-                  <Image
-            src="/images/logo.png"
-            alt="logo"
+           <Link href="/">
+            <Image
+              src="/images/logo.png"
+              alt="logo"
             width={126}
             height={45}
-            className="w-22.5 md:w-31.5"
-          />
-              </a>
-       
+            className="w-22.5 md:w-31.5 h-auto"
+            />
+          </Link>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex gap-10 text-[17px] uppercase font-semibold">
-            <li>
-              <a href="#home" className="hover:text-gray-300">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#events" className="hover:text-gray-300">
-                Events
-              </a>
-            </li>
-            <li>
-              <a href="#gallery" className="hover:text-gray-300">
-                Podcast
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="hover:text-gray-300">
-                About
-              </a>
-            </li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/events">Events</Link></li>
+            <li><Link href="/podcast">Podcast</Link></li>
+            <li><Link href="/about">About</Link></li>
           </ul>
+
 
           <button
             className="md:hidden z-50"
@@ -84,39 +69,26 @@ export default function Navbar() {
         ${open ? "translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex items-center justify-between px-6 py-6 border-b border-white/20">
-          <Image
+         <Link href="/" onClick={() => setOpen(false)}>
+ <Image
             src="/images/logo.png"
             alt="logo"
-            width={118}
+             width={118}
             height={45}
-            className="w-22.5 md:w-29.5"
+            className="w-22.5 md:w-29.5 h-auto"
           />
+         </Link>
+         
           <button onClick={() => setOpen(false)}>
             <X size={26} />
           </button>
         </div>
 
-        <ul className="flex flex-col gap-6 px-6 py-8 text-sm uppercase">
-          <li>
-            <a href="#home" onClick={() => setOpen(false)}>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#events" onClick={() => setOpen(false)}>
-              Events
-            </a>
-          </li>
-          <li>
-            <a href="#gallery" onClick={() => setOpen(false)}>
-              Podcast
-            </a>
-          </li>
-          <li>
-            <a href="#about" onClick={() => setOpen(false)}>
-              About
-            </a>
-          </li>
+          <ul className="flex flex-col gap-6 px-6 py-8 text-sm uppercase">
+          <li><Link href="/" onClick={() => setOpen(false)}>Home</Link></li>
+          <li><Link href="/events" onClick={() => setOpen(false)}>Events</Link></li>
+          <li><Link href="/podcast" onClick={() => setOpen(false)}>Podcast</Link></li>
+          <li><Link href="/about" onClick={() => setOpen(false)}>About</Link></li>
         </ul>
       </aside>
     </>
