@@ -27,7 +27,7 @@ export default function Gallery() {
       id="gallery"
       className="relative w-full py-10 lg:py-28  bg-[url('/images/space.jpg')] bg-cover bg-center overflow-hidden flex flex-col justify-center px-4 sm:px-6 md:px-16"
     >
-      <h3 className="text-center text-white sm:text-[16px] font-semibold tracking-widest text-sm md:text-lg  md:text-[32px] mb-12 md:mb-16 relative z-10">
+      <h3 className="text-center text-white  font-semibold tracking-widest text-sm sm:text-[16px]  md:text-[32px] mb-12 md:mb-16 relative z-10">
         WHAT'S IT LIKE WHEN WE HAVE EVENTS
       </h3>
 
