@@ -1,3 +1,5 @@
+import { Mail, MessageCircle  } from "lucide-react";
+
 export default function Footer() {
   return (
     <footer className="relative  text-white/80 overflow-hidden px-6 md:px-16 bg-[url('/images/space.jpg')] bg-cover bg-start overflow-hidden">
@@ -25,7 +27,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 text-sm mt-5">
           {/* Left */}
           <div className="flex items-center gap-2 cursor-pointer hover:text-white transition  text-[16px] md:text-[18px]">
-            <span className="text-lg">💬</span>
+            <span className="text-lg"><MessageCircle /></span>
             <span>Let’s chat</span>
           </div>
 
