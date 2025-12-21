@@ -12,7 +12,7 @@ export default function Hero() {
         flex flex-col justify-end
         bg-[url('/images/space.jpg')] bg-cover bg-center
         overflow-hidden
-        px-4 sm:px-6 md:px-16
+        px-6 md:px-16
         pt-24
       "
     >
