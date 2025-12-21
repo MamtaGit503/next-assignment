@@ -22,7 +22,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <h3 className="font-semibold tracking-widest text-sm md:text-[24px] mb-6  text-center mt-10 md:mt-24 uppercase">
+      <h3 className="font-semibold tracking-widest text-sm md:text-[20px] mb-6  text-center mt-10 md:mt-24 uppercase">
         “Astronomy compels the soul to look upwards and leads us from this world
         to another”
       </h3>
