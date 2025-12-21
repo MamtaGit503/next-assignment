@@ -31,7 +31,7 @@ export default function Footer() {
 
           {/* Right */}
           <div className="flex items-center gap-2 text-[16px] md:text-[18px] hover:text-white transition cursor-pointer ">
-            <span>✉</span>
+            <span><Mail /></span>
             <span>info@logoipsum.com</span>
           </div>
         </div>
