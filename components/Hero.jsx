@@ -8,7 +8,7 @@ export default function Hero() {
     <section
       id="home"
       className="
-         relative min-h-auto md:min-h-[124vh]
+         relative min-h-auto lg:min-h-[124vh]
         flex flex-col justify-end
         bg-[url('/images/space.jpg')] bg-cover bg-center
         overflow-hidden
