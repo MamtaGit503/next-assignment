@@ -59,7 +59,7 @@ export default function Hero() {
       <div
         className="
           relative z-10
-          flex items-center justify-end gap-16
+          flex items-center justify-end gap-[40px]
           mt-10
         "
       >
