@@ -25,13 +25,13 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="relative py-20 md:py-28  bg-[url('/images/space.jpg')] bg-cover bg-center overflow-hidden flex flex-col justify-center px-4 sm:px-6 md:px-16"
+      className="relative w-full py-10 lg:py-28  bg-[url('/images/space.jpg')] bg-cover bg-center overflow-hidden flex flex-col justify-center px-4 sm:px-6 md:px-16"
     >
-      <h3 className="text-center text-white sm:text-[16px] font-semibold tracking-widest text-sm md:text-lg  md:text-[32px] mb-12 md:mb-24 relative z-10">
+      <h3 className="text-center text-white sm:text-[16px] font-semibold tracking-widest text-sm md:text-lg  md:text-[32px] mb-12 md:mb-16 relative z-10">
         WHAT'S IT LIKE WHEN WE HAVE EVENTS
       </h3>
 
-      <div className="w-full sm:w-[85%] md:w-[75%]  mx-auto">
+      <div className="w-full sm:w-[95%] md:w-[75%]  mx-auto">
         <Swiper
           modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
           effect="coverflow"
@@ -40,13 +40,17 @@ export default function Gallery() {
           slidesPerView={1.2}
           spaceBetween={10}
           breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
+            // 640: {
+            //   slidesPerView: 1,
+            //   spaceBetween: 20,
+            // },
+            200: {
+              slidesPerView: 1.5,
+              spaceBetween: 1,
             },
-            768: {
+            400: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 1,
             },
             1024: {
               slidesPerView: 2.5,
@@ -87,8 +91,7 @@ export default function Gallery() {
         </Swiper>
       </div>
 
-      {/* Controls */}
-      <div className="flex items-center justify-center gap-4 mt-12 relative z-20">
+      <div className="flex items-center justify-center gap-4 mt-6 md:mt-12 relative z-20">
         <button className="custom-prev  transition-all cursor-pointer p-2">
           <ArrowLeft size={20} className="sm:w-6 " />
         </button>
@@ -144,9 +147,9 @@ export default function Gallery() {
         }
 
         .custom-pagination .swiper-pagination-bullet {
-          width: 6px;
-          height: 6px;
-          background: #444;
+          width: 8px;
+          height: 8px;
+          background: gray;
           opacity: 1;
           transition: all 0.3s;
           border-radius: 50%;
