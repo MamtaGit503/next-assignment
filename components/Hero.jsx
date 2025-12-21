@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="relative z-10 ">
         <h1
           className="
-            text-3xl md:text-5xl xl:text-[80px]
+            text-3xl lg:text-5xl xl:text-[80px]
             font-extrabold leading-tight uppercase
           "
         >
