@@ -1,4 +1,4 @@
-import { Mail, MessageCircle  } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -27,13 +27,17 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 text-sm mt-5">
           {/* Left */}
           <div className="flex items-center gap-2 cursor-pointer hover:text-white transition  text-[16px] md:text-[18px]">
-            <span className="text-lg"><MessageCircle /></span>
+            <span className="text-lg">
+              <MessageCircle />
+            </span>
             <span>Let’s chat</span>
           </div>
 
           {/* Right */}
           <div className="flex items-center gap-2 text-[16px] md:text-[18px] hover:text-white transition cursor-pointer ">
-            <span><Mail /></span>
+            <span>
+              <Mail />
+            </span>
             <span>info@logoipsum.com</span>
           </div>
         </div>

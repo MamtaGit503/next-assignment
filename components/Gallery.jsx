@@ -40,10 +40,6 @@ export default function Gallery() {
           slidesPerView={1.2}
           spaceBetween={10}
           breakpoints={{
-            // 640: {
-            //   slidesPerView: 1,
-            //   spaceBetween: 20,
-            // },
             200: {
               slidesPerView: 1.5,
               spaceBetween: 1,
