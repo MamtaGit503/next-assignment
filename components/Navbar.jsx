@@ -24,13 +24,16 @@ export default function Navbar() {
         ${scrolled ? "bg-black/40 backdrop-blur" : "bg-transparent"}`}
       >
         <nav className="flex items-center justify-between px-6 md:px-16 py-6">
-          <Image
+          <a href="#home" className="hover:text-gray-300 cursor-pointer">
+                  <Image
             src="/images/logo.png"
             alt="logo"
             width={126}
             height={45}
             className="w-22.5 md:w-31.5"
           />
+              </a>
+       
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex gap-10 text-[17px] uppercase font-semibold">
