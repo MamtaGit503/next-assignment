@@ -2,7 +2,7 @@ import { Mail, MessageCircle  } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="relative  text-white/80 overflow-hidden px-6 md:px-16 bg-[url('/images/space.jpg')] bg-cover bg-start overflow-hidden">
+    <footer className="relative  text-white/80 overflow-hidden px-6 md:px-16 bg-[url('/images/space.jpg')] bg-cover bg-bottom overflow-hidden">
       <div className="absolute inset-0 "></div>
 
       <div className="relative py-6">
