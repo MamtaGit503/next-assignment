@@ -5,7 +5,7 @@ export default function Events() {
       className="px-6 md:px-16 py-10   bg-[url('/images/space.jpg')] bg-cover bg-center
         overflow-hidden"
     >
-      <h3 className="tracking-widest text-sm md:text-lg sm:text-[16px] lg:text-[24px] font-semibold mb-3">
+      <h3 className="tracking-widest text-sm sm:text-[16px]  md:text-[32px] font-semibold mb-3">
         RECENT EVENTS
       </h3>
 
