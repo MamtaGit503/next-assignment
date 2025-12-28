@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Frontend Developer Assignment using Next.js 
 
-## Getting Started
+This project is a frontend assignment submitted as part of the **Frontend Developer Intern** application
 
-First, run the development server:
+The goal of this assignment was to convert the provided Figma design into a pixel-accurate, responsive landing page using a modern frontend framework while following clean UI and good UX practices.
 
-```bash
+
+## Live Demo
+
+🔗 Live URL: https://next-assignment-phi.vercel.app/  
+🔗 GitHub Repository: https://github.com/MamtaGit503/next-assignment
+
+
+## Tech Stack Used
+
+- Framework: Next.js (App Router – Latest Version)
+- Styling: Tailwind CSS
+- Language: JavaScript (ES6+)
+- Icons: Lucide React
+- Image Optimization: Next.js `Image` component
+- Deployment: Vercel
+- Version Control: Git & GitHub
+
+## Install dependencies
+
+npm install
+
+## Start the development server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Author
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Developed by Mamta.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+gmail : mamta560332@gmail.com
 
-## Learn More
+feel free to reach out
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
